@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pq1-rN-qkO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jX6-AI-fj2">
+            <objects>
+                <navigationController id="Pq1-rN-qkO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e4H-iV-9xV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="miw-Js-eAx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klJ-85-TZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="-244"/>
+        </scene>
+        <!--View Input-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Rockets" id="BYZ-38-t0r" customClass="RocketsListViewController" customModule="SpaceXInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="usV-bE-Fzt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ivM-cd-r3A">
+                                    <size key="itemSize" width="375" height="170"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RocketCell" id="lYM-VN-7tl" customClass="RocketCollectionViewCell" customModule="SpaceXInfo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falcon 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9n-cy-Uxt">
+                                                    <rect key="frame" x="103.5" y="58.5" width="168" height="53"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mu7-Cv-sv5">
+                                                    <rect key="frame" x="320" y="140" width="43" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="b9n-cy-Uxt" firstAttribute="centerX" secondItem="lYM-VN-7tl" secondAttribute="centerX" id="CNB-td-76V"/>
+                                            <constraint firstItem="b9n-cy-Uxt" firstAttribute="centerY" secondItem="lYM-VN-7tl" secondAttribute="centerY" id="FgC-df-h9f"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mu7-Cv-sv5" secondAttribute="trailing" constant="12" id="lSV-Wi-BZK"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mu7-Cv-sv5" secondAttribute="bottom" constant="12" id="r4J-bT-TNy"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="activeStatusLabel" destination="Mu7-Cv-sv5" id="ZTL-zt-eKm"/>
+                                            <outlet property="titleLabel" destination="b9n-cy-Uxt" id="CTL-V9-7tE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3JW-eh-whN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pmz-5R-7rN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="usV-bE-Fzt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6K1-Ci-vp1"/>
+                            <constraint firstItem="usV-bE-Fzt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W4h-s8-NWj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="usV-bE-Fzt" secondAttribute="trailing" id="gQJ-iX-fan"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="usV-bE-Fzt" secondAttribute="bottom" id="z0z-NX-oVY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rockets" id="tIa-gn-2zN"/>
+                    <connections>
+                        <outlet property="rocketsCollectionView" destination="usV-bE-Fzt" id="p7S-TQ-25O"/>
+                        <segue destination="XV6-eX-xCo" kind="show" identifier="RocketInfoViewController" id="Mgr-KM-nae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="4Dn-qe-xrA" customClass="RocketListInitializer" customModule="SpaceXInfo" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewInput" destination="BYZ-38-t0r" id="1mo-9S-UsB"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="405.60000000000002" y="-244.22788605697153"/>
+        </scene>
+        <!--RocketInfo-->
+        <scene sceneID="J3p-Fw-NdJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RocketInfo" id="XV6-eX-xCo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNe-xg-8x0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="-245"/>
+        </scene>
+    </scenes>
+</document>

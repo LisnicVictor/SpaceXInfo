@@ -1,0 +1,38 @@
+PODS:
+  - LVNetworkAdapter (0.1.0):
+    - LVResult
+  - LVResult (0.1.0)
+  - ViperPoison (0.1.1)
+
+DEPENDENCIES:
+  - LVNetworkAdapter (from `git@gitlab.com:LisnicVictor/LVNetworkAdapter.git`)
+  - LVResult (from `git@gitlab.com:LisnicVictor/LVResult.git`)
+  - ViperPoison (from `git@gitlab.com:LisnicVictor/ViperPoison.git`)
+
+EXTERNAL SOURCES:
+  LVNetworkAdapter:
+    :git: git@gitlab.com:LisnicVictor/LVNetworkAdapter.git
+  LVResult:
+    :git: git@gitlab.com:LisnicVictor/LVResult.git
+  ViperPoison:
+    :git: git@gitlab.com:LisnicVictor/ViperPoison.git
+
+CHECKOUT OPTIONS:
+  LVNetworkAdapter:
+    :commit: fe392a75d5bca5ab7979761e9ff65a33e3aadc40
+    :git: git@gitlab.com:LisnicVictor/LVNetworkAdapter.git
+  LVResult:
+    :commit: abcbfecb9c42d9dbf9bcac73da7fb43af37e3324
+    :git: git@gitlab.com:LisnicVictor/LVResult.git
+  ViperPoison:
+    :commit: 433f841db004640eef765e8191afba0940e77cbd
+    :git: git@gitlab.com:LisnicVictor/ViperPoison.git
+
+SPEC CHECKSUMS:
+  LVNetworkAdapter: c877632b75539428cd9dcbb99d86cba2d289554b
+  LVResult: c6f746fd905ea902443580c6b0a64b94028109c9
+  ViperPoison: 33f659cddb168e2acf9864413a6358cdaf74e6c3
+
+PODFILE CHECKSUM: 93562aadaddd7069031952c0299f4b51c11fa61d
+
+COCOAPODS: 1.4.0
