@@ -10,6 +10,8 @@
 		47035E60207F3F7100206363 /* FakeRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47035E5F207F3F7100206363 /* FakeRequestSender.swift */; };
 		47035E62207F416700206363 /* FakeRocketInfoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47035E61207F416700206363 /* FakeRocketInfoFetcher.swift */; };
 		47035E64207F441800206363 /* FakeRocketDataJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 47035E63207F441800206363 /* FakeRocketDataJson.txt */; };
+		476D4F3C207F5D1A00149F92 /* FakeSingleRocketDataJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 476D4F3B207F5D1A00149F92 /* FakeSingleRocketDataJson.txt */; };
+		476D4F3F207F5D8B00149F92 /* RocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476D4F3E207F5D8B00149F92 /* RocketTests.swift */; };
 		9552F36D207EA9A3002C4041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F36C207EA9A3002C4041 /* AppDelegate.swift */; };
 		9552F372207EA9A3002C4041 /* RocketsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9552F370207EA9A3002C4041 /* RocketsList.storyboard */; };
 		9552F374207EA9A3002C4041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9552F373207EA9A3002C4041 /* Assets.xcassets */; };
@@ -45,7 +47,9 @@
 		43B5266CF5AC2B5B2ABD7E91 /* Pods_SpaceXInfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXInfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47035E5F207F3F7100206363 /* FakeRequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRequestSender.swift; sourceTree = "<group>"; };
 		47035E61207F416700206363 /* FakeRocketInfoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRocketInfoFetcher.swift; sourceTree = "<group>"; };
-		47035E63207F441800206363 /* FakeRocketDataJson.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FakeRocketDataJson.txt; sourceTree = "<group>"; };
+		47035E63207F441800206363 /* FakeRocketDataJson.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FakeRocketDataJson.txt; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		476D4F3B207F5D1A00149F92 /* FakeSingleRocketDataJson.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FakeSingleRocketDataJson.txt; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		476D4F3E207F5D8B00149F92 /* RocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketTests.swift; sourceTree = "<group>"; };
 		9552F369207EA9A3002C4041 /* SpaceXInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9552F36C207EA9A3002C4041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9552F371207EA9A3002C4041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RocketsList.storyboard; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				47035E63207F441800206363 /* FakeRocketDataJson.txt */,
+				476D4F3B207F5D1A00149F92 /* FakeSingleRocketDataJson.txt */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -135,6 +140,14 @@
 				9552F381207EA9A4002C4041 /* RocketInfoFetcherTests.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		476D4F3D207F5D7400149F92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				476D4F3E207F5D8B00149F92 /* RocketTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9552F360207EA9A3002C4041 = {
@@ -178,6 +191,7 @@
 		9552F380207EA9A4002C4041 /* SpaceXInfoTests */ = {
 			isa = PBXGroup;
 			children = (
+				476D4F3D207F5D7400149F92 /* Models */,
 				476D4F3A207F537F00149F92 /* Services */,
 				47035E5D207F3F0E00206363 /* Mocks */,
 				47035E5C207F3F0900206363 /* Stubs */,
@@ -441,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47035E64207F441800206363 /* FakeRocketDataJson.txt in Resources */,
+				476D4F3C207F5D1A00149F92 /* FakeSingleRocketDataJson.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +594,7 @@
 				9552F382207EA9A4002C4041 /* RocketInfoFetcherTests.swift in Sources */,
 				47035E62207F416700206363 /* FakeRocketInfoFetcher.swift in Sources */,
 				47035E60207F3F7100206363 /* FakeRequestSender.swift in Sources */,
+				476D4F3F207F5D8B00149F92 /* RocketTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
