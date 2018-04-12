@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47035E60207F3F7100206363 /* FakeRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47035E5F207F3F7100206363 /* FakeRequestSender.swift */; };
+		47035E62207F416700206363 /* FakeRocketInfoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47035E61207F416700206363 /* FakeRocketInfoFetcher.swift */; };
+		47035E64207F441800206363 /* FakeRocketDataJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 47035E63207F441800206363 /* FakeRocketDataJson.txt */; };
 		9552F36D207EA9A3002C4041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F36C207EA9A3002C4041 /* AppDelegate.swift */; };
 		9552F372207EA9A3002C4041 /* RocketsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9552F370207EA9A3002C4041 /* RocketsList.storyboard */; };
 		9552F374207EA9A3002C4041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9552F373207EA9A3002C4041 /* Assets.xcassets */; };
 		9552F377207EA9A3002C4041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9552F375207EA9A3002C4041 /* LaunchScreen.storyboard */; };
-		9552F382207EA9A4002C4041 /* SpaceXInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F381207EA9A4002C4041 /* SpaceXInfoTests.swift */; };
+		9552F382207EA9A4002C4041 /* RocketInfoFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F381207EA9A4002C4041 /* RocketInfoFetcherTests.swift */; };
 		9552F394207EB08E002C4041 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F393207EB08E002C4041 /* URLs.swift */; };
 		9552F398207EB384002C4041 /* RocketInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9552F397207EB384002C4041 /* RocketInfo.storyboard */; };
 		9552F39A207EB505002C4041 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F399207EB505002C4041 /* Rocket.swift */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		43B5266CF5AC2B5B2ABD7E91 /* Pods_SpaceXInfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXInfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47035E5F207F3F7100206363 /* FakeRequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRequestSender.swift; sourceTree = "<group>"; };
+		47035E61207F416700206363 /* FakeRocketInfoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRocketInfoFetcher.swift; sourceTree = "<group>"; };
+		47035E63207F441800206363 /* FakeRocketDataJson.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FakeRocketDataJson.txt; sourceTree = "<group>"; };
 		9552F369207EA9A3002C4041 /* SpaceXInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9552F36C207EA9A3002C4041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9552F371207EA9A3002C4041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RocketsList.storyboard; sourceTree = "<group>"; };
@@ -47,7 +53,7 @@
 		9552F376207EA9A3002C4041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9552F378207EA9A3002C4041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9552F37D207EA9A4002C4041 /* SpaceXInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9552F381207EA9A4002C4041 /* SpaceXInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXInfoTests.swift; sourceTree = "<group>"; };
+		9552F381207EA9A4002C4041 /* RocketInfoFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketInfoFetcherTests.swift; sourceTree = "<group>"; };
 		9552F383207EA9A4002C4041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9552F393207EB08E002C4041 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		9552F397207EB384002C4041 /* RocketInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RocketInfo.storyboard; sourceTree = "<group>"; };
@@ -98,6 +104,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		47035E5C207F3F0900206363 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				47035E63207F441800206363 /* FakeRocketDataJson.txt */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		47035E5D207F3F0E00206363 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				47035E5E207F3F1200206363 /* Services */,
+				47035E5F207F3F7100206363 /* FakeRequestSender.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		47035E5E207F3F1200206363 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				47035E61207F416700206363 /* FakeRocketInfoFetcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		476D4F3A207F537F00149F92 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9552F381207EA9A4002C4041 /* RocketInfoFetcherTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		9552F360207EA9A3002C4041 = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +178,9 @@
 		9552F380207EA9A4002C4041 /* SpaceXInfoTests */ = {
 			isa = PBXGroup;
 			children = (
-				9552F381207EA9A4002C4041 /* SpaceXInfoTests.swift */,
+				476D4F3A207F537F00149F92 /* Services */,
+				47035E5D207F3F0E00206363 /* Mocks */,
+				47035E5C207F3F0900206363 /* Stubs */,
 				9552F383207EA9A4002C4041 /* Info.plist */,
 			);
 			path = SpaceXInfoTests;
@@ -399,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47035E64207F441800206363 /* FakeRocketDataJson.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +576,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9552F382207EA9A4002C4041 /* SpaceXInfoTests.swift in Sources */,
+				9552F382207EA9A4002C4041 /* RocketInfoFetcherTests.swift in Sources */,
+				47035E62207F416700206363 /* FakeRocketInfoFetcher.swift in Sources */,
+				47035E60207F3F7100206363 /* FakeRequestSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
